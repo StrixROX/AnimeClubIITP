@@ -1,0 +1,51 @@
+body {
+  margin: 0;
+}
+
+#background-video {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+  background-position: center;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+  z-index: -1;
+}
+
+.page-wrapper {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.banner {
+  height: 40%;
+  width: 15rem;
+  background: linear-gradient(to bottom, white, transparent);
+  box-sizing: border-box;
+}
+
+.banner #logo {
+  width: 100%;
+}
+
+.banner .socials {
+  display: inline-flex;
+  margin: 4rem 0;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.banner .socials .icon {
+  width: 2rem;
+  height: 2rem;
+}
