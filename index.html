@@ -16,6 +16,9 @@
     </div>
     <div class="banner">
       <img src="./assets/images/anime-club-logo.png" alt="Anime Club IIT Patna" id="logo">
+      <div id="fullscreen" onclick="fullscreenVid()">
+        Full-<br>screen
+      </div>
     </div>
     <script>
       const soundSetting = document.getElementById('sound-setting')
@@ -31,6 +34,10 @@
           bgVideo.muted = true
         }
       })
+      
+      function fullscreenVid() {
+        bgVideo.requestFullscreen()
+      }
     </script>
   </div>
 </body>

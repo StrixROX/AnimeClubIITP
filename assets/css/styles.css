@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
 body {
   margin: 0;
 }
@@ -29,6 +31,11 @@ body {
   width: 40vmin;
   background: transparent;
   box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
 }
 
 .banner #logo {
@@ -74,4 +81,30 @@ body {
 }
 .sound-setting[data-sound="OFF"] img#on{
   display: none;
+}
+
+#fullscreen {
+  text-align: left;
+  width: max-content;
+  text-transform: uppercase;
+  color: white;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 0.9rem;
+  font-weight: bold;
+  line-height: 1.3rem;
+  animation: flow 2s ease-out forwards;
+  animation-delay: 2.8s;
+  cursor: pointer;
+  opacity: 0;
+}
+
+@keyframes flow {
+  0% {
+    letter-spacing: 0.4rem;
+    opacity: 0;
+  }
+  100% {
+    letter-spacing: 0.9rem;
+    opacity: 0.7;
+  }
 }
