@@ -63,7 +63,6 @@ body {
 .sound-setting img {
   position: absolute;
   width: 100%;
-  filter: invert();
   cursor: pointer;
 }
 .sound-setting img#off {
