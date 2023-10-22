@@ -8,11 +8,30 @@
   <link rel="stylesheet" href="./assets/css/styles.css">
 </head>
 <body>
-  <video src="./assets/videos/compilation_1.1.mov" id="background-video" autoplay loop muted></video>
+  <video src="./assets/videos/compilation_2.mov" id="background-video" autoplay loop muted></video>
   <div class="page-wrapper">
+    <div class="sound-setting" data-sound="OFF" id="sound-setting">
+      <img src="./assets/images/volume-on.png" alt="Sound ON" id="on">
+      <img src="./assets/images/volume-off.png" alt="Sound OFF" width="80%" id="off">
+    </div>
     <div class="banner">
       <img src="./assets/images/anime-club-logo.png" alt="Anime Club IIT Patna" id="logo">
     </div>
+    <script>
+      const soundSetting = document.getElementById('sound-setting')
+      const bgVideo = document.getElementById('background-video')
+      soundSetting.addEventListener('click', () => {
+        const newState = (soundSetting.dataset.sound === 'ON') ? 'OFF' : 'ON'
+        soundSetting.dataset.sound = newState
+
+        if (newState === 'ON') {
+          bgVideo.muted = false
+        }
+        else if (newState === 'OFF') {
+          bgVideo.muted = true
+        }
+      })
+    </script>
   </div>
 </body>
 </html>

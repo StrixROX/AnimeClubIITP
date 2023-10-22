@@ -48,3 +48,31 @@ body {
   width: 2rem;
   height: 2rem;
 }
+
+.sound-setting {
+  position: absolute;
+  display: flex;
+  top: 1rem;
+  right: 1rem;
+  width: 2rem;
+  height: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.sound-setting img {
+  position: absolute;
+  width: 100%;
+  filter: invert();
+  cursor: pointer;
+}
+.sound-setting img#off {
+  width: 80%;
+}
+
+.sound-setting[data-sound="ON"] img#off{
+  display: none;
+}
+.sound-setting[data-sound="OFF"] img#on{
+  display: none;
+}
