@@ -22,13 +22,12 @@ body {
   overflow: hidden;
   box-sizing: border-box;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
 }
 
 .banner {
-  height: 40%;
   width: 15rem;
-  background: linear-gradient(to bottom, white, transparent);
+  background: transparent;
   box-sizing: border-box;
 }
 
